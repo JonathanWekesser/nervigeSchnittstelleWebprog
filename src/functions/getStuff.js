@@ -11,7 +11,7 @@ app.http('getStuff', {
         let name = request.query.get('name') || await request.text();
         let calculation = request.query.get('calculation') || await request.text();
         let luckynumber = request.query.get('luckynumber') || await request.text();
-        let favouriteanimal = request.query.get('animal') || await request.text();
+        let favouriteanimal = request.query.get('favouriteanimal') || await request.text();
         
         if (name != '' && name != null) {
             return { body: `Wie kann man nur "${name}" heißen ... ?` };
